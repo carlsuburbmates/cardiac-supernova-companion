@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Pliant Heart Toolkit — Cardiac Supernova</title>
+  <meta name="description" content="Free printable visual frameworks, pocket cards, and grounding practices from Cardiac Supernova.">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/app.js"></script>
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- Eyelid Shutter (The Blink Transition) -->
+  <div class="eyelid-shutter" id="eyelidShutter" aria-hidden="true">
+    <div class="eyelid-top"></div>
+    <div class="eyelid-bottom"></div>
+  </div>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="doc-shell masthead-inner">
+      <a class="title-mark" href="../">
+        <svg class="cardiac-monitor-line" viewBox="0 0 32 18" fill="none" stroke="#FFFFFF" stroke-width="1.8">
+          <path d="M0 9h8l2-6 3 12 2.5-9 2 5 2.5-2H32" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>CARDIAC SUPERNOVA</span>
+      </a>
+      <nav class="editorial-nav">
+        <a class="nav-anchor" href="../">Exhibition</a>
+        <a class="nav-anchor active cta" href="./">The Toolkit</a>
+        <a class="nav-anchor" href="../review/">Note from Carl</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc-shell">
+    <section class="prologue" style="padding-bottom: 40px;">
+      <div class="prologue-meta">
+        <span class="tag">Reader Companion</span>
+        <span>&bull;</span>
+        <span>Free Action Materials</span>
+      </div>
+      <h1 class="prologue-headline">The Pliant Heart <em>Action Toolkit</em></h1>
+      <p class="prologue-lead">
+        A printable sanctuary of visual models, bedside pocket cards, and threshold rituals drawn directly from the manuscript. Everything here is free for personal use to help you carry what is heavy without turning to stone.
+      </p>
+    </section>
+
+    <!-- 1. The Bedside Pocket Card (Interactive 3D Badge) -->
+    <section style="margin: 40px 0 90px;">
+      <div style="text-align: center; margin-bottom: 36px;">
+        <div class="section-eyebrow">Tactile Practice</div>
+        <h2 class="section-title" style="margin-bottom: 8px;">The Bedside Pocket Card</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 540px; margin: 0 auto;">
+          A double-sided card for badge, wallet, or desk. Click anywhere on the card to flip between front and reverse.
+        </p>
+      </div>
+
+      <div class="badge-zone">
+        <div class="badge-3d" id="bedsideBadge3D" data-tilt>
+          <!-- Front Face: The Four Pillars -->
+          <div class="badge-panel front">
+            <div>
+              <div class="lanyard-slot"></div>
+              <div class="badge-kicker">Side 1 &bull; During Crisis</div>
+              <h3 class="badge-heading">The Four Pillars</h3>
+              <ul class="badge-list">
+                <li>
+                  <strong>1. Conscious Boundary Crossing</strong>
+                  Set down the armor. Lower your eyes to theirs. Stay anchored in yourself.
+                </li>
+                <li>
+                  <strong>2. The Silent Posture</strong>
+                  Silence the urge to fix or give advice. Match and steady your breathing.
+                </li>
+                <li>
+                  <strong>3. Holding Space for the Whole Truth</strong>
+                  Let their sorrow stand without sanitising it with cheerful clichés.
+                </li>
+                <li>
+                  <strong>4. Radical Accompaniment</strong>
+                  Go where they are without demanding an immediate happy ending.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-flip-prompt">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+              <span>Click to flip to reverse side</span>
+            </div>
+          </div>
+
+          <!-- Back Face: The Second Question -->
+          <div class="badge-panel back">
+            <div>
+              <div class="lanyard-slot"></div>
+              <div class="badge-kicker" style="color: var(--iris-pulse);">Side 2 &bull; After the Shift</div>
+              <h3 class="badge-heading">The Second Question</h3>
+              <p style="font-size: 0.92rem; color: #CBD5E1; line-height: 1.6; margin-bottom: 18px;">
+                When a difficult event ends, skip the automatic Australian evasion: <em>"She'll be right, mate."</em>
+              </p>
+              <div style="background: rgba(0,0,0,0.5); border-left: 2px solid var(--iris-pulse); padding: 14px 16px; border-radius: 4px; font-family: var(--font-editorial); font-style: italic; color: #FFFFFF; font-size: 1.05rem; margin-bottom: 22px;">
+                "That was brutal today. How are your ribs feeling?"
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+                <strong>Hold the Rope:</strong> Listening to despair means watching for danger. If you hear acute risk or suicidality, never keep it secret. Protect their life immediately.
+              </p>
+            </div>
+            <div class="badge-flip-prompt">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+              <span>Click to flip back</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 24px;">
+        <button class="doc-btn ghost" id="badgeFlipTrigger" style="font-size: 0.85rem; padding: 10px 22px;">
+          <span>Flip Badge</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. The 8 Visual Frameworks Exhibition -->
+    <section style="margin: 80px 0;">
+      <div class="section-eyebrow">Visual Models</div>
+      <h2 class="section-title">The Eight Frameworks</h2>
+      <p style="color: var(--text-muted); max-width: 640px; margin-top: -36px; margin-bottom: 40px;">
+        Click any framework to open in high-resolution vector view, or download printable monochrome PDFs.
+      </p>
+
+      <div class="exhibition-grid">
+        <!-- Fig 01 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig01_telemetry_triangle.png" data-title="Figure 1.1: The Telemetry Triangle" data-pdf-src="figures/fig01_telemetry_triangle.pdf">
+            <span class="frame-number">FIG 1.1</span>
+            <img src="figures/fig01_telemetry_triangle.png" alt="The Telemetry Triangle" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">The Telemetry Triangle</h3>
+              <p class="frame-origin">Chapter 1 &bull; Sensation, Signal &amp; Story</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig01_telemetry_triangle.png" data-title="Figure 1.1: The Telemetry Triangle" data-pdf-src="figures/fig01_telemetry_triangle.pdf">View</a>
+              <a href="figures/fig01_telemetry_triangle.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 02 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig02_allostatic_loop.png" data-title="Figure 4.1: The Exhaustion Cycle & Vagal Breakout" data-pdf-src="figures/fig02_allostatic_loop.pdf">
+            <span class="frame-number">FIG 4.1</span>
+            <img src="figures/fig02_allostatic_loop.png" alt="Exhaustion Cycle" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">The Exhaustion Cycle</h3>
+              <p class="frame-origin">Chapter 4 &bull; The Body Is the Instrument</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig02_allostatic_loop.png" data-title="Figure 4.1: The Exhaustion Cycle & Vagal Breakout" data-pdf-src="figures/fig02_allostatic_loop.pdf">View</a>
+              <a href="figures/fig02_allostatic_loop.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 03 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig03_kevlar_paradox.png" data-title="Figure 6.1: The Kevlar Paradox (Compassion vs Protection)" data-pdf-src="figures/fig03_kevlar_paradox.pdf">
+            <span class="frame-number">FIG 6.1</span>
+            <img src="figures/fig03_kevlar_paradox.png" alt="The Kevlar Paradox" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">The Kevlar Paradox</h3>
+              <p class="frame-origin">Chapter 6 &bull; Daring to Bare Your Heart</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig03_kevlar_paradox.png" data-title="Figure 6.1: The Kevlar Paradox (Compassion vs Protection)" data-pdf-src="figures/fig03_kevlar_paradox.pdf">View</a>
+              <a href="figures/fig03_kevlar_paradox.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 04 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig04_neural_compassion.png" data-title="Figure 8.1: Empathic Distress vs Compassion" data-pdf-src="figures/fig04_neural_compassion.pdf">
+            <span class="frame-number">FIG 8.1</span>
+            <img src="figures/fig04_neural_compassion.png" alt="Neural Compassion Model" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">Distress vs Compassion</h3>
+              <p class="frame-origin">Chapter 8 &bull; The Bedside Chair</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig04_neural_compassion.png" data-title="Figure 8.1: Empathic Distress vs Compassion" data-pdf-src="figures/fig04_neural_compassion.pdf">View</a>
+              <a href="figures/fig04_neural_compassion.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 05 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig05_four_pillars.png" data-title="Figure 0.1: Four Pillars of the Bedside Chair" data-pdf-src="figures/fig05_four_pillars.pdf">
+            <span class="frame-number">FIG 0.1</span>
+            <img src="figures/fig05_four_pillars.png" alt="Four Pillars of Bedside Chair" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">The Four Pillars</h3>
+              <p class="frame-origin">Introduction &bull; Navigating the Storm</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig05_four_pillars.png" data-title="Figure 0.1: Four Pillars of the Bedside Chair" data-pdf-src="figures/fig05_four_pillars.pdf">View</a>
+              <a href="figures/fig05_four_pillars.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 06 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig06_boundary_spectrum.png" data-title="Figure 11.1: The Boundary Spectrum" data-pdf-src="figures/fig06_boundary_spectrum.pdf">
+            <span class="frame-number">FIG 11.1</span>
+            <img src="figures/fig06_boundary_spectrum.png" alt="Boundary Spectrum" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">The Boundary Spectrum</h3>
+              <p class="frame-origin">Chapter 11 &bull; Healing with Heart</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig06_boundary_spectrum.png" data-title="Figure 11.1: The Boundary Spectrum" data-pdf-src="figures/fig06_boundary_spectrum.pdf">View</a>
+              <a href="figures/fig06_boundary_spectrum.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 07 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig07_thermostat_leader.png" data-title="Figure 15.1: The Thermometer vs The Thermostat" data-pdf-src="figures/fig07_thermostat_leader.pdf">
+            <span class="frame-number">FIG 15.1</span>
+            <img src="figures/fig07_thermostat_leader.png" alt="Thermostat Leadership" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">Thermostat Leadership</h3>
+              <p class="frame-origin">Chapter 15 &bull; Guiding Through Tempests</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig07_thermostat_leader.png" data-title="Figure 15.1: The Thermometer vs The Thermostat" data-pdf-src="figures/fig07_thermostat_leader.pdf">View</a>
+              <a href="figures/fig07_thermostat_leader.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fig 08 -->
+        <div class="frame-card">
+          <div class="frame-stage" data-open-modal data-img-src="figures/fig08_supernova_equilibrium.png" data-title="Figure 17.1: The Supernova Core Equilibrium" data-pdf-src="figures/fig08_supernova_equilibrium.pdf">
+            <span class="frame-number">FIG 17.1</span>
+            <img src="figures/fig08_supernova_equilibrium.png" alt="Supernova Core Equilibrium" loading="lazy">
+          </div>
+          <div class="frame-caption">
+            <div>
+              <h3 class="frame-name">The Supernova Core</h3>
+              <p class="frame-origin">Chapter 17 &bull; Rising from Ashes</p>
+            </div>
+            <div class="frame-downloads">
+              <a href="#" class="frame-btn view" data-open-modal data-img-src="figures/fig08_supernova_equilibrium.png" data-title="Figure 17.1: The Supernova Core Equilibrium" data-pdf-src="figures/fig08_supernova_equilibrium.pdf">View</a>
+              <a href="figures/fig08_supernova_equilibrium.pdf" download class="frame-btn pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Decontamination Threshold Rituals -->
+    <section style="margin: 80px 0;">
+      <div class="section-eyebrow">Chapter 14</div>
+      <h2 class="section-title">The Five-Minute Decontamination Guide</h2>
+      <p style="color: var(--text-muted); max-width: 680px; margin-top: -36px; margin-bottom: 40px;">
+        Four physical threshold rituals to mark the line between what belongs to the world and what belongs to your home.
+      </p>
+
+      <div class="threshold-stack">
+        <div class="threshold-card">
+          <div class="threshold-idx">01</div>
+          <div class="threshold-info">
+            <h4>The Threshold of Water</h4>
+            <p>At shift end, stand at the sink. Lather warm soap across your hands, wrists, and forearms. Watch the water drain and speak silently:</p>
+            <div class="threshold-mantra">
+              "I gave you my skill. I gave you my presence. The work is finished. Your sorrow belongs to the ward; it does not belong to my bed."
+            </div>
+          </div>
+        </div>
+
+        <div class="threshold-card">
+          <div class="threshold-idx">02</div>
+          <div class="threshold-info">
+            <h4>The Shedding of the Uniform</h4>
+            <p>Never travel home wearing the clothes you wore in the crucible. Changing into soft, civilian clothes sends an unmistakable biological signal to your nervous system that the tactical deployment is over.</p>
+          </div>
+        </div>
+
+        <div class="threshold-card">
+          <div class="threshold-idx">03</div>
+          <div class="threshold-info">
+            <h4>The Car Sanctuary</h4>
+            <p>Take five minutes alone in your vehicle before turning the ignition key. No catastrophic news on the radio, no angry debrief calls. Rest your hands on the wheel, close your eyes, take three deep physiological sighs, and let your body arrive.</p>
+          </div>
+        </div>
+
+        <div class="threshold-card">
+          <div class="threshold-idx">04</div>
+          <div class="threshold-info">
+            <h4>The Second Question</h4>
+            <p>When a shift ends after a horrific event, do not settle for the automatic evasion. Look your colleague in the eye, step into the quiet, and ask: <em>"That was brutal today. How are your ribs feeling?"</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-body">
+        <button class="modal-close-icon" id="modalCloseBtn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="modal-view">
+          <img src="" alt="" id="modalImg">
+        </div>
+        <div class="modal-bar">
+          <span style="font-family: var(--font-editorial); font-size: 1.15rem; color: #FFFFFF;" id="modalTitle">Visual Framework</span>
+          <div style="display: flex; gap: 10px;">
+            <a href="#" download id="modalPng" class="frame-btn view" style="padding: 9px 18px;">Download PNG</a>
+            <a href="#" download id="modalPdf" class="frame-btn pdf" style="padding: 9px 18px;">Printable PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="editorial-footer">
+    <div class="doc-shell footer-row">
+      <span>&copy; 2026 Carl Gallardo. All rights reserved.</span>
+      <span>Published in Melbourne, Australia</span>
+    </div>
+  </footer>
+
+</body>
+</html>
